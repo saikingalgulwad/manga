@@ -149,7 +149,7 @@ useEffect(() => {
      
       <Infor />
      
-         <span onClick={geting} className='text-red-700 font-semibold text-center text-neonBlue text-lg mb-10'>View Content</span>
+    <p className="text-center text-neonBlue text-lg mb-10">   <span onClick={geting} className='text-red-700 font-semibold '>View Content</span></p>  
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {search.map((chapter) => (
