@@ -23,7 +23,7 @@ const onSave=()=>{
 }
 const uploadFile=async()=>{
  
-  let req= await fetch("http://localhost:3000/api/userpost",{
+  let req= await fetch("https://manga-tau-nine.vercel.app/api/userpost",{
      method:"POST",
      body: JSON.stringify({ title:title,number:number,image:image,pdf:pdf}),
    })

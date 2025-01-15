@@ -29,7 +29,7 @@ import { UserButton,useUser } from '@clerk/nextjs';
  
   const geting=async()=>{
     
-    const response = await fetch(`http://localhost:3000/api/serach?search=${query}`, {
+    const response = await fetch(`https://manga-tau-nine.vercel.app/api/serach?search=${query}`, {
       cache: "no-store", // Disables caching
     });
     if(!response.ok){
@@ -42,7 +42,7 @@ import { UserButton,useUser } from '@clerk/nextjs';
  }
 useEffect(() => {
   return(async()=>{
-  const response = await fetch(`http://localhost:3000/api/serach?search=`, {
+  const response = await fetch(`https://manga-tau-nine.vercel.app/api/serach?search=`, {
     cache: "no-store", // Disables caching
   });
   if(!response.ok){

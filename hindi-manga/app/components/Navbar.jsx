@@ -19,7 +19,7 @@ const Navbar =() => {
   // inputSe(data1);
  const geting=async()=>{
     console.log(query);
-    const response = await fetch(`http://localhost:3000/api/serach?search=${query}`, {
+    const response = await fetch(`https://manga-tau-nine.vercel.app/api/serach?search=${query}`, {
       cache: "no-store", // Disables caching
     });
     if(!response.ok){
