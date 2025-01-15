@@ -148,6 +148,9 @@ useEffect(() => {
     <main className="min-h-screen bg-darkBg p-8">
      
       <Infor />
+     
+         <span onClick={geting} className='text-red-700 font-semibold text-center text-neonBlue text-lg mb-10'>View Content</span>
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {search.map((chapter) => (
           <Link key={chapter._id} href={`/chapter/${chapter._id}`}>
