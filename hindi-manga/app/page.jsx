@@ -58,7 +58,7 @@ useEffect(() => {
           height={50}
           className='rounded-full'
         />
-        <span className="text-1xl font-bold  sm:block">Hindi Manga</span>
+        <span className="text-1xl font-bold  sm:block">Manga Verce</span>
       </div>
 
       {/* Desktop Navigation Links */}
@@ -139,7 +139,7 @@ useEffect(() => {
      
       <Infor />
      
-    <p className="text-center text-neonBlue text-lg mb-10">   <span onClick={geting} className='text-red-700 font-semibold '>View Content</span></p>  
+    
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {search.map((chapter) => (
