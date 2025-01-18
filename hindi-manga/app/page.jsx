@@ -41,17 +41,7 @@ import { UserButton,useUser } from '@clerk/nextjs';
  
  }
 useEffect(() => {
-  return(async()=>{
-  const response = await fetch("https://manga-tau-nine.vercel.app/api/serach?search=", {
-    cache: "no-store", // Disables caching
-  });
-  if(!response.ok){
-    console.log("error");
-  }const chapter= await response.json();
-
-
- inputSe(chapter);
-})
+ geting();
 }, [])
 
  
