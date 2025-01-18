@@ -46,7 +46,7 @@ const Navbar =() => {
             height={50}
             className='rounded-full'
           />
-          <span className="text-1xl font-bold  sm:block">Hindi Manga</span>
+          <span className="text-1xl font-bold  sm:block">Manga Verce</span>
         </div>
 
         {/* Desktop Navigation Links */}
