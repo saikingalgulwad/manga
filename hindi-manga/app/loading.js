@@ -1,6 +1,6 @@
 import React from "react";
 
-loading () {
+function loading () {
   return (
     <div className="flex items-center justify-center min-h-screen bg-black">
       {/* Loader Container */}
