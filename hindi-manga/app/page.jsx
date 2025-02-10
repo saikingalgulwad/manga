@@ -140,7 +140,7 @@ useEffect(() => {
      
       <Infor />
      
-    <Suspense fallback ={    <div className="flex items-center justify-center min-h-screen bg-black">
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-black">
       {/* Loader Container */}
       <div className="flex flex-col items-center gap-4">
         
