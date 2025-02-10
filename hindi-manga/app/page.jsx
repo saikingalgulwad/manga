@@ -142,10 +142,10 @@ useEffect(() => {
      
       <Infor />
      
-
+<Suspense fallback={<Loading />}>
       
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-         <Suspense fallback={<Loading />}>
+         
         {search.map((chapter) = (
           <Link key={chapter._id} href={`/chapter/${chapter._id}`}>
             <div className="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300 cursor-pointer overflow-hidden">
@@ -165,8 +165,8 @@ useEffect(() => {
               </div>
             </div>
           </Link>
-        ))}</Suspense>
-      </div> 
+        ))}
+      </div> </Suspense>
     </main></>
   )
 }
