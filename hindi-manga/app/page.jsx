@@ -145,7 +145,7 @@ useEffect(() => {
       
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
          
-        {search.map((chapter) = (
+        {search?.map((chapter) = (
           <Link key={chapter._id} href={`/chapter/${chapter._id}`}>
             <div className="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300 cursor-pointer overflow-hidden">
               <Image
