@@ -140,7 +140,10 @@ useEffect(() => {
      
       <Infor />
      
-    <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-black">
+
+      
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+         <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-black">
       {/* Loader Container */}
       <div className="flex flex-col items-center gap-4">
         
@@ -180,8 +183,6 @@ useEffect(() => {
 
       </div>
     </div>}>
-      
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {search.map((chapter) => (
           <Link key={chapter._id} href={`/chapter/${chapter._id}`}>
             <div className="bg-gray-800 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300 cursor-pointer overflow-hidden">
@@ -201,8 +202,8 @@ useEffect(() => {
               </div>
             </div>
           </Link>
-        ))}
-      </div> </Suspense>
+        ))}</Suspense>
+      </div> 
     </main></>
   )
 }
