@@ -3,7 +3,6 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {Suspense} from 'react';
-import Loading from './loading.js'
 
 
 import Infor from './components/Infor';
@@ -142,7 +141,7 @@ useEffect(() => {
      
       <Infor />
      
-<Suspense fallback={<Loading />}>
+<Suspense fallback={<h1>Loading.........</h1>}>
       
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
          
